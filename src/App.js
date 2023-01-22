@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import NavMobile from './components/NavMobile';
 import Stats from './components/Stats';
+import Why from './components/Why';
 
 
 
@@ -35,6 +36,8 @@ const App = () => {
         <NavMobile setNavMobile={setNavMobile} />
       </div>
       <Stats />
+      <Why />
+      <div className='h-[2000px]'></div>
     </div>
   );  
 };
