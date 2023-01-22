@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
           {/* hero image */}
           <div className='flex-1'
-          data-aos='fade-up  '
+          data-aos='fade-up'
           data-aos-delay='600'>
             <img src={Images} alt='' 
             />

@@ -9,11 +9,14 @@ import AccountBtns from './AccountBtns';
 import { CgMenuRight } from 'react-icons/cg';
 
 
-const Header = () => {
+const Header = ({setNavMobile}) => {
   return(
-    <header className='py-[30px] lg:pt-[60px]'>
+    <header className='py-[30px] lg:pt-[60px]'
+    data-aos = 'fade-down'
+    data-aos-delay='900'
+    data-aos-duration='2000'>
       <div className='container mx-auto flex items-center 
-      justify between'>
+      justify-between'>
         {/*logo */}
         <a href='#'>
           <img src={Logo} alt='' />
@@ -24,7 +27,8 @@ const Header = () => {
           <AccountBtns />
         </div>
         {/* open nav btn */}
-        <div className='lg:hidden cursor-pointer'>
+        <div  onClick={() => setNavMobile(true)}
+        className='lg:hidden cursor-pointer'>
           <CgMenuRight className='text-2xl' />
         </div>
       </div>
